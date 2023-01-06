@@ -16,7 +16,7 @@ describe('Centrarl de Atendimento ao Cliente TAT', function() {
         cy.fillMandatoryFieldsAndSubmit()
     
     })
-    it.only('Preenche os campos obrigtórios e enviar o formulário', function (){
+    it('Preenche os campos obrigtórios e enviar o formulário', function (){
        cy.geT('input[type="radio"]')
        .should('have.length', '3')
        .each(function($radio){
